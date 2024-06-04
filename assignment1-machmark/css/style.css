@@ -1,0 +1,105 @@
+body {
+    margin:0;
+    padding:0;
+    height:100vh;
+    overflow:hidden;
+    font-family:"Arial", "Helvetica", sans-serif;
+    box-sizing:border-box;
+    color: rgb(0, 0, 0)
+}
+
+.flexblock {
+    display:flex;
+    height:calc(100% - 20px);
+    gap:10px;
+    padding:10px;
+    border: 2px solid #000000;
+}
+
+.leftblock {
+    flex:1 1 auto;
+    position:relative;
+    background-color:rgb(197, 101, 101);
+    border:2px solid #000000;
+}
+
+.rightblock {
+    flex:0 0 300px;
+    background-color:rgb(133, 101, 197);
+    overflow:auto;
+    border:2px solid #000000;
+}
+
+/* inside leftblock */
+#webglview {
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    touch-action:none; /* prevent browser handle pointer events */
+}
+
+#modelname {
+    position:absolute;
+    left:10px;
+    top:10px;
+    font-size:1.5em;
+}
+
+/* inside rightblock */
+#includeblock {
+    margin:10px 0;
+    background-color:rgb(189, 182, 47);
+    border:1px solid #888;
+}
+
+.optionblock {
+    margin:1em 0;
+    border:1px solid #888;
+}
+
+#buttonReset {
+    width:100%;
+    padding:0.2em;
+    background-color: greenyellow;
+}
+
+.sliderflex {
+    display:flex;
+    align-items:center;
+
+}
+
+.slider {
+    flex:1 1 auto; 
+    accent-color: rgb(93, 26, 26);
+    
+}
+
+.slidervalue {
+    flex:0 0 2em;
+    color:rgb(50, 41, 125)
+}
+.optionselect{
+    background-color: red;
+}
+
+/* for portrait mode */
+@media (max-aspect-ratio:1/1) {
+    .flexblock {
+        flex-direction:column;
+    }
+
+    .rightblock {
+        flex-basis: auto;
+    }
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: #000000;
+}

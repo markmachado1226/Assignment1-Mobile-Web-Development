@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+
+index.html
+ AUTHOR: Mark Machado (machmark@sheridancollege.ca)
+CREATED: 2024-06-02
+UPDATED: 2024-06-02
+-->
+
+<head>
+    <title>Assignment 1 - Mark Machado</title>
+
+    <meta charset="utf-8">
+    <meta name="generator" content="EditPlus">
+    <meta name="author" content="Song Ho Ahn">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- NOTE: MUST put your CSS into a separate file, Otherwise deducted -->
+
+
+    <!-- JS -->
+    <!-- load the required JS libs -->
+    <script src="js/webgl.js" defer></script>
+    <script src="js/Smal-0.96.min.js" defer></script>
+    <script src="js/Logger.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/ui_sphere.js" defer></script>
+    <script src="js/ui_cylinder.js" defer></script>
+    <script src="js/ui_cone.js" defer></script>
+    <script src="js/ui_torus.js" defer></script>
+
+    <!-- NOTE: MUST implement your JS code in a separate file, otherwise deducted -->
+
+
+</head>
+
+
+<body>
+
+    <!-- flex block =========================================================== -->
+    <div class="flexblock">
+
+        <!-- col1 ================================================================= -->
+        <div class="leftblock">
+            <canvas id="webglview">
+            </canvas>
+            <div id="modelname">
+                Model Name
+            </div>
+        </div>
+        <!-- end of col1 ========================================================== -->
+
+
+        <!-- col2 ================================================================= -->
+        <div class="rightblock">
+
+            <div class="optionselect">
+
+                <form>
+                    <label for="shapes">Select a geometry:</label>
+                    <select name="shapes" id="shapes">
+                        <option value="../ui_sphere.html"> Sphere </option>
+                        <option value="../ui_cone.html"> Cone </option>
+                        <option value="../ui_cylinder.html"> Cylinder </option>
+                        <option value="../ui_torus.html"> Torus </option>
+                    </select>
+                    <br><br>
+                </form>
+
+            </div>
+
+
+            <!-- placeholder for UI =================================== -->
+            <div id="includeblock">
+            </div>
+
+            <!-- common options ======================================= -->
+            <div class="optionblock">
+                <label><input type="checkbox" id="checkTexture">Show Texture</label>
+                <br>
+                <label><input type="checkbox" id="checkSmooth">Smooth Shading</label>
+                <br>
+                <button type="reset" id="buttonReset">RESET CAMERA</button>
+            </div>
+
+        </div>
+        <!-- end of col2 ========================================================== -->
+
+    </div>
+    <!-- end of flexblock ===================================================== -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        © 2024, Mark Machado
+    </footer>
+
+</body>
+
+</html>
