@@ -1,3 +1,8 @@
+html {
+    background-color: black;
+}
+
+
 body {
     margin:0;
     padding:0;
@@ -5,7 +10,7 @@ body {
     overflow:hidden;
     font-family:"Arial", "Helvetica", sans-serif;
     box-sizing:border-box;
-    color: rgb(0, 0, 0)
+    color: white;
 }
 
 .flexblock {
@@ -19,15 +24,17 @@ body {
 .leftblock {
     flex:1 1 auto;
     position:relative;
-    background-color:rgb(197, 101, 101);
-    border:2px solid #000000;
+    background-color:rgb(0, 0, 0);
+    background-image: url('../img/stars.jpg');
+    border:2px solid #ff00b3;
 }
 
 .rightblock {
     flex:0 0 300px;
-    background-color:rgb(133, 101, 197);
+    background-color:rgb(0, 0, 0);
     overflow:auto;
-    border:2px solid #000000;
+    border:2px solid #ff00b3;
+    background-image: url('../img/stars.jpg');
 }
 
 /* inside leftblock */
@@ -50,7 +57,7 @@ body {
 /* inside rightblock */
 #includeblock {
     margin:10px 0;
-    background-color:rgb(189, 182, 47);
+    background-color: black;
     border:1px solid #888;
 }
 
@@ -62,7 +69,8 @@ body {
 #buttonReset {
     width:100%;
     padding:0.2em;
-    background-color: greenyellow;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .sliderflex {
@@ -79,10 +87,10 @@ body {
 
 .slidervalue {
     flex:0 0 2em;
-    color:rgb(50, 41, 125)
+    color:rgb(255, 255, 255)
 }
 .optionselect{
-    background-color: red;
+    background-color: rgb(0, 0, 0); 
 }
 
 /* for portrait mode */
